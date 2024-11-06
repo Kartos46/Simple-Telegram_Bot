@@ -22,14 +22,14 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     # Check if the callback data is "join_link"
     if query.data == "join_link":
-        join_link = "https://t.me/DiwaliRewardsBot?start=5668614247"  # Replace with your actual join link
+        join_link = "Joining Link"  # Replace with your actual join link
         await query.edit_message_text(
             text=f"Join our community here: {join_link}"
         )
 
 def main():
     # Replace 'YOUR_TOKEN_HERE' with your actual bot token
-    application = Application.builder().token("7492642687:AAFmhu5QkubmUf5OsuQmhmbLxiP6qiILqXk").build()
+    application = Application.builder().token("YOUR_TOKEN_HERE").build()
 
     # Register the start command handler
     application.add_handler(CommandHandler("start", start))
